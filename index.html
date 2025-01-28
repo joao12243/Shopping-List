@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"   rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping list</title>
-
-  <link rel="stylesheet" href="styles/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Compras</title>
 </head>
 <body>
-  <h1>Lista de compras</h1>
+    <div class="container">
+        <img src="assets/logo.svg" alt="Logo" class="logo"> 
+        <header>
+            <a href="#">Voltar</a>
+        </header>
+        <main>
+            <h2>Compras da semana</h2>
+            <input type="text" id="itemInput" placeholder="Adicione um novo item">
+            <button id="addItemBtn">Adicionar item</button>
+            <ul id="itemList"></ul>
+            <div id="message" class="hidden"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
